@@ -1,0 +1,31 @@
+{
+  "name": "zuritodoapp",
+  "version": "1.0.0",
+  "description": "Add a Todo task to a Todo collection 2. Update a particular Todo task 3. Delete Todo task 4. Retrieve all Todo tasks (pagination optional)",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "dev": "nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/owenmiano/ZuriTodoApp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/owenmiano/ZuriTodoApp/issues"
+  },
+  "homepage": "https://github.com/owenmiano/ZuriTodoApp#readme",
+  "dependencies": {
+    "dotenv": "^16.0.1",
+    "express": "^4.18.1",
+    "moment": "^2.29.3",
+    "mongoose": "^6.4.1",
+    "mongoose-paginate-v2": "^1.6.3"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.18"
+  }
+}
