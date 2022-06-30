@@ -2,8 +2,7 @@ const express=require('express')
 const router=express.Router();
 const controller=require('../controllers/tasksControllers')
 
-router.get('/', controller.example)
-
+ 
 // create New Task
 router.post('/newTask', controller.createTask)
 // Retrieve all tasks

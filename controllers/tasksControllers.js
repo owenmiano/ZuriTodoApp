@@ -1,9 +1,5 @@
 const Task=require('../models/Task')
 
-exports.example=(req,res)=>{
-   res.send("Flight example")
-    console.log("hiii world")
-}
 //Create new Task
 exports.createTask= async(req,res)=>{
    const {title,description}=req.body
@@ -13,9 +9,7 @@ exports.createTask= async(req,res)=>{
           title:title,
           description:description
       })
-      console.log(newTasks)
-
-      res.status(201).json({message:`New task ${title} created!`})
+      res.status(201).json({message:`New task, ${title}, created!`})
    } catch (err) {
       res.status(500).json({'message':err.message})
    }
